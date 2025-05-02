@@ -1,0 +1,151 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #fff0d8;
+    background-repeat: no-repeat;
+    background-image:url('pictures/bg.jpg');
+    background-color: #E9C46A;
+    background-blend-mode: multiply;
+    height: 100vh;
+}
+
+
+.page{
+    width: 900px;
+    margin: auto;
+    border-style: solid white;
+}
+
+
+header{
+    background: linear-gradient(120deg, #36BA98, #F4A261);
+}
+
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -webkit-text-size-adjust: none;
+}
+
+
+.logo{
+    width: 200px;
+
+}
+
+
+.title{
+    position: absolute;
+    margin-left: 320px;
+    margin-top: -125px;
+    font-size: 50px;
+}
+
+
+.minititle{
+    position: absolute;
+    margin-left: 333px;
+    margin-top: -75px;
+    font-size: 20px;
+}
+
+
+.dropdown {
+    float: right;
+    display: inline-block;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #F4A261;
+}
+
+
+  .flex-container > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+.flex-container2 {
+    display:flex;
+    background-color: #F4A261;
+    padding-left: 730px;
+}
+
+
+.occupied {
+    background-color: red;
+    color: white;
+}
+
+
+button {
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+
+.body-section-container {
+    width: 100%;
+    min-height: 30vh;
+    background-color: #d16f37;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.catweek {
+    width: 95.2%;
+    height: 5%;
+    margin-left: 5px;
+    max-height: 13vh;
+    background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.catdesc {
+    width: 111.5%;
+    height: 50%;
+    max-height: 10vh;
+    background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+
+
+.catweekcon{
+    height: 20%;
+    max-height: 50vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+  /* Hiding the scrollbar */
+  .catweekcon {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+
+    .catdesc {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+
+    .borderdesc{
+        border: solid white 3px;
+}

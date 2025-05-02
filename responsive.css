@@ -1,0 +1,59 @@
+/* Base Styles for mobile-first design */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    text-align: center; /* Center align content */
+    font-size: 16px; /* Default font size for readability */
+}
+
+/* Scale the entire page */
+.page {
+    width: 100%; /* Make the page full width */
+    max-width: 900px; /* Retain desktop width for larger screens */
+    margin: 0 auto; /* Center the page horizontally */
+    text-align: left; /* Keep text aligned to the left */
+    transform: scale(0.95); /* Shrinks the entire page slightly */
+    transform-origin: top center; /* Ensures scaling starts from the top center */
+}
+
+/* Media Queries */
+
+/* Small Screens: 451px and below */
+@media screen and (max-width: 451px) {
+    .page {
+        transform: scale(0.70);
+        width: 100%;
+        -webkit-transform: scale(0.70);
+        -moz-transform: scale(0.70);
+        -ms-transform: scale(0.70);
+        -o-transform: scale(0.70);
+}
+
+    .title {
+        font-size: 32px; /* Reduce the font size for small screens */
+        margin-left: 0; /* Adjust alignment */
+    }
+
+    .minititle {
+        font-size: 14px; /* Scale down subtitle for readability */
+        margin-left: 0; /* Align with the title */
+    }
+}
+
+/* Medium Screens: 678px and up */
+@media screen and (min-width: 678px) {
+    .page {
+        transform: scale(0.9); /* Slightly smaller scaling for medium screens */
+        width: 90%; /* Fit the page within medium screens */
+    }
+}
+
+/* Large Screens: 1200px and up */
+@media screen and (min-width: 1200px) {
+    .page {
+        transform: scale(1); /* Keep the original size for large screens */
+        width: 80%; /* Center and balance width */
+    }
+}
